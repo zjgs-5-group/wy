@@ -1,0 +1,45 @@
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+<package name="default" extends="struts-default">
+	<action name="login" class="com.wy.action.LoginAction">
+	</action>
+	<action name="setpwd" class="com.wy.action.setPasswordAction">
+	</action>
+	<action name="setuerimg" class="com.wy.action.setUserImgAction">
+	</action>
+	<action name="ClickThomb" class="com.wy.action.ClickThomb">
+	</action>
+	<action name="ShowFrag" class="com.wy.action.ShowFrag">
+	</action>
+	<action name="FragComment" class="com.wy.action.FragComment">
+	</action>
+	<action name="GetPersonalInfo" class="com.wy.action.GetPersonalInfo">
+	</action>
+	<action name="PublishFrag" class="com.wy.action.PublishFrag">
+	</action>
+	<action name="CPD" class="com.wy.action.ChangePersonalData">
+	</action>
+	<action name="UFL" class="com.wy.action.UFL">
+	</action>
+	<action name="fragCollect" class="com.wy.action.fragCollect">
+	</action>
+	<action name="fragFocus" class="com.wy.action.fragFocus">
+	</action>
+	<action name="HistoryView" class="com.wy.action.HistoryView">
+	</action>
+	<action name="Register" class="com.wy.action.Register">
+	</action>
+	<action name="Checkin" class="com.wy.action.CheckIn">
+	</action>
+	<action name="resetPassword" class="com.wy.action.resetPassword">
+	</action>
+	<action name="ShowComment" class="com.wy.action.ShowComment">
+	</action>
+	<action name="ShowCommentReply" class="com.wy.action.ShowCommentReply">
+	</action>
+</package>
+</struts>   
