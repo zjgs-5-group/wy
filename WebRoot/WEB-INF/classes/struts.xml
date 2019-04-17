@@ -32,5 +32,7 @@
 </action>
 <action name="gethistoryofscan"  class="com.microfragment.action.GetHistoryOfScan">
 </action>
+<action name="acommandessay"  class="com.microfragment.action.AccomandEssay">
+</action>
 </package>
 </struts>    
