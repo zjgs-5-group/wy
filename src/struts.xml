@@ -1,38 +1,48 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
 <struts>
+
 <package name="default" extends="struts-default" namespace="/">
-<action name="register"  class="com.microfragment.action.RegisterAction">
-</action>
-<action name="essaybyfocusid"  class="com.microfragment.action.EssayByFocusUserAction">
-</action>
-<action name="essaybyclass"  class="com.microfragment.action.EssayByClassOrderByThomSave">
-</action>
-<action name="getaudit"  class="com.microfragment.action.ResultOfEssayAudit">
-</action>
-<action name="getfans"  class="com.microfragment.action.GetFansByUno">
-</action>
-<action name="getprivatemess"  class="com.microfragment.action.GetPrivateMess">
-</action>
-<action name="shownewcomments"  class="com.microfragment.action.ShowNewClass">
-</action>
-<action name="shownewclick"  class="com.microfragment.action.ShowNewClick">
-</action>
-<action name="searchessaybytitle"  class="com.microfragment.action.SearchEssayByTitle">
-</action>
-<action name="minesave"  class="com.microfragment.action.MineSaveAction">
-</action>
-<action name="getnumberofmyfocufansthomb"  class="com.microfragment.action.GetNumberOfMyFocuFansThomb">
-</action>
-<action name="getusernameimgofmyfocu"  class="com.microfragment.action.GetUserNameImgOfMyFocu">
-</action>
-<action name="getusernameimgofmyfans"  class="com.microfragment.action.GetNameImgOfMyFans">
-</action>
-<action name="getuserinfo"  class="com.microfragment.action.GetUserInformation">
-</action>
-<action name="gethistoryofscan"  class="com.microfragment.action.GetHistoryOfScan">
-</action>
-<action name="acommandessay"  class="com.microfragment.action.AccomandEssay">
-</action>
+
+<action name="register"  class="com.microfragment.action.Register"></action>
+<action name="login" class="com.microfragment.action.LoginAction"></action> 
+<action name="resetpassword" class="com.microfragment.action.resetPassword"></action>
+<action name="cpd" class="com.microfragment.action.ChangePersonalData"></action>
+<action name="deletemyessay" class="com.microfragment.action.DeleteMyEssay"></action>	
+<action name="searchessaybytitle"  class="com.microfragment.action.SearchEssayByTitle"></action>
+<action name="acommandessay"  class="com.microfragment.action.AccomandEssay"></action>
+<action name="clickthomb" class="com.microfragment.action.ClickThomb"> </action>
+<action name="getpersonalinfo" class="com.microfragment.action.GetPersonalInfo"></action>
+<action name="setuserimg" class="com.microfragment.action.RecevieImage"></action>
+<action name="getimg" class="com.microfragment.action.GetImage"></action>	
+<action name="getmyessay" class="com.microfragment.action.GetMyEssay"></action>
+<action name="publishfrag" class="com.microfragment.action.PublishFrag"></action>
+	
+
+<action name="essaybyclass"  class="com.microfragment.action.EssayByClassOrderByThomSave"></action>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+<action name="setessayimg" class="com.microfragment.action.SetEssayImg"></action>
+
+
+
 </package>
+
+
 </struts>    

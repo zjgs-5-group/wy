@@ -1,6 +1,7 @@
 package com.microfragment.action;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.net.URLDecoder;
 import java.util.ArrayList;
 
 
@@ -28,11 +29,17 @@ public class EssayByClassOrderByThomSave {
 	HttpServletResponse response=(HttpServletResponse)ctx.get(ServletActionContext.HTTP_RESPONSE);
 	response.setContentType("text/json");
 	response.setCharacterEncoding("utf-8");
+	response.setHeader("Access-Control-Allow-Origin", "*");
+	response.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, DELETE");  
+    response.setHeader("Access-Control-Max-Age", "3600");  
+    response.setHeader("Access-Control-Allow-Headers", "x-requested-with");
 	PrintWriter outPrintWriter=response.getWriter();
 	FindDao findDao=new FindDaoimp();
-	for(int j= 0;j<findDao.essaybyclass(classstring).size();j++){
+	
+	String s1=URLDecoder.decode(classstring,"UTF-8");
+	for(int j= 0;j<findDao.essaybyclass(s1).size();j++){
 	   
-	    jsonArrayList.add(gson.toJson(findDao.essaybyclass(classstring).get(j)));
+	    jsonArrayList.add(gson.toJson(findDao.essaybyclass(s1).get(j)));
 	}
 	outPrintWriter.print(jsonArrayList);
 	return null;

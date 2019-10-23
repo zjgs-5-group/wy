@@ -4,6 +4,7 @@ package com.microfragment.entity;
  * EthombId entity. @author MyEclipse Persistence Tools
  */
 
+@SuppressWarnings("serial")
 public class EthombId implements java.io.Serializable {
 
 	// Fields

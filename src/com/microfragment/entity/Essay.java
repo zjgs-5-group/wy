@@ -4,6 +4,7 @@ package com.microfragment.entity;
  * Essay entity. @author MyEclipse Persistence Tools
  */
 
+@SuppressWarnings("serial")
 public class Essay implements java.io.Serializable {
 
 	// Fields
@@ -13,9 +14,8 @@ public class Essay implements java.io.Serializable {
 	private String econtent;
 	private String edate;
 	private String eclass;
-	private String uno;
+	private Integer uno;
 	private String eimg;
-	private String eaudit;
 
 	// Constructors
 
@@ -24,14 +24,13 @@ public class Essay implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public Essay(String etitle, String econtent, String edate, String eclass, String uno, String eimg, String eaudit) {
+	public Essay(String etitle, String econtent, String edate, String eclass, Integer uno, String eimg) {
 		this.etitle = etitle;
 		this.econtent = econtent;
 		this.edate = edate;
 		this.eclass = eclass;
 		this.uno = uno;
 		this.eimg = eimg;
-		this.eaudit = eaudit;
 	}
 
 	// Property accessors
@@ -76,11 +75,11 @@ public class Essay implements java.io.Serializable {
 		this.eclass = eclass;
 	}
 
-	public String getUno() {
+	public Integer getUno() {
 		return this.uno;
 	}
 
-	public void setUno(String uno) {
+	public void setUno(Integer uno) {
 		this.uno = uno;
 	}
 
@@ -90,14 +89,6 @@ public class Essay implements java.io.Serializable {
 
 	public void setEimg(String eimg) {
 		this.eimg = eimg;
-	}
-
-	public String getEaudit() {
-		return this.eaudit;
-	}
-
-	public void setEaudit(String eaudit) {
-		this.eaudit = eaudit;
 	}
 
 }

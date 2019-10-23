@@ -1,7 +1,7 @@
 #MyEclipse Hibernate Properties
-#Sat Apr 06 11:51:21 CST 2019
+#Mon Sep 16 20:28:08 CST 2019
 genBasicCompId=true
-sessionFactoryName=com.microfragment.util.HibernateSessionFactory
+sessionFactoryName=
 profile=
 daoSFId=
 jndiPath=

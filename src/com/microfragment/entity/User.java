@@ -4,12 +4,12 @@ package com.microfragment.entity;
  * User entity. @author MyEclipse Persistence Tools
  */
 
+@SuppressWarnings("serial")
 public class User implements java.io.Serializable {
 
 	// Fields
 
 	private Integer uno;
-	private String uuser;
 	private String upwd;
 	private String ualias;
 	private String usex;
@@ -18,6 +18,7 @@ public class User implements java.io.Serializable {
 	private String phone;
 	private String uimg;
 	private String uarea;
+	private String ubg;
 
 	// Constructors
 
@@ -25,10 +26,14 @@ public class User implements java.io.Serializable {
 	public User() {
 	}
 
+	/** minimal constructor */
+	public User(String phone) {
+		this.phone = phone;
+	}
+
 	/** full constructor */
-	public User(String uuser, String upwd, String ualias, String usex, Integer uage, String usign, String phone,
-			String uimg, String uarea) {
-		this.uuser = uuser;
+	public User(String upwd, String ualias, String usex, Integer uage, String usign, String phone, String uimg,
+			String uarea, String ubg) {
 		this.upwd = upwd;
 		this.ualias = ualias;
 		this.usex = usex;
@@ -37,6 +42,7 @@ public class User implements java.io.Serializable {
 		this.phone = phone;
 		this.uimg = uimg;
 		this.uarea = uarea;
+		this.ubg = ubg;
 	}
 
 	// Property accessors
@@ -47,14 +53,6 @@ public class User implements java.io.Serializable {
 
 	public void setUno(Integer uno) {
 		this.uno = uno;
-	}
-
-	public String getUuser() {
-		return this.uuser;
-	}
-
-	public void setUuser(String uuser) {
-		this.uuser = uuser;
 	}
 
 	public String getUpwd() {
@@ -119,6 +117,14 @@ public class User implements java.io.Serializable {
 
 	public void setUarea(String uarea) {
 		this.uarea = uarea;
+	}
+
+	public String getUbg() {
+		return this.ubg;
+	}
+
+	public void setUbg(String ubg) {
+		this.ubg = ubg;
 	}
 
 }

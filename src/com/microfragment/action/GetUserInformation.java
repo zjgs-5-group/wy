@@ -23,6 +23,10 @@ private int uno;
 		HttpServletResponse response=(HttpServletResponse)ctx.get(ServletActionContext.HTTP_RESPONSE);
 		response.setContentType("text/json");
 		response.setCharacterEncoding("utf-8");
+		response.setHeader("Access-Control-Allow-Origin", "*");
+		response.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, DELETE");  
+        response.setHeader("Access-Control-Max-Age", "3600");  
+        response.setHeader("Access-Control-Allow-Headers", "x-requested-with");
 		PrintWriter outPrintWriter=response.getWriter();
 		MineDao mineDao=new MineDaoimp();
 
